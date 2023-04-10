@@ -1,0 +1,186 @@
+.footer {
+  position: relative;
+  width: 100%;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/footer_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: .3;
+}
+
+.footer__info {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__info-mapa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.mapa {
+  border: 5px solid var(--first-color);
+  margin-bottom: 1rem;
+  box-shadow: 0 0 20px var(--first-color);
+  width: 100%;
+  max-width: 600px;
+  flex: 1;
+}
+
+.footer__info-title {
+  text-shadow: 0 0 20px #01EFFC;
+
+}
+
+.footer__info-datos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.footer__info-phone {
+  color: #FEC505;
+  text-shadow: 0 0 20px #FEC505;
+}
+
+.footer__info-location {
+  color: #1BF818;
+  text-shadow: 0 0 20px #1BF818;
+}
+
+.footer__redes {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.footer__redes-ig {
+  color: #f85e91;
+  text-shadow: 0 0 20px #f85e91;
+  font-size: 3rem;
+}
+
+.footer__redes-fb {
+  color: #0e76a8;
+  text-shadow: 0 0 20px #0e76a8;
+  font-size: 3rem;
+
+}
+
+.footer__redes-in {
+  color: #01EFFC;
+  text-shadow: 0 0 20px #01EFFC;
+  font-size: 3rem;
+
+}
+
+.footer__politicas {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.footer__politicas h4 {
+  font-size: 1rem;
+  margin: 0 .5rem;
+  white-space: nowrap;
+  letter-spacing: .2rem;
+}
+
+.derechos {
+  width: 100%;
+  padding: .5rem 5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--first-color);
+}
+
+.derechos__desarrolladores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2;
+  gap: 1rem;
+  max-width: 576px;
+}
+
+.derechos__copyright {
+  align-self: flex-end;
+  text-align: right;
+  flex: 1;
+}
+
+@media (min-width: 576px) {
+
+  .footer__politicas {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .derechos {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .derechos__copyright {
+    align-self: unset;
+  }
+
+  .footer__info-datos {
+    align-items: center;
+  }
+
+  .footer__info-mapa {
+    align-items: center;
+  }
+
+  .footer__politicas {
+    justify-content: center;
+  }
+
+
+  .footer__info-mapa {
+    height: 300px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .footer__info {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .footer__info-datos {
+    align-items: unset;
+  }
+
+  .footer__info-mapa {
+    align-items: flex-end;
+  }
+
+  .footer__politicas {
+    justify-content: flex-end;
+  }
+}

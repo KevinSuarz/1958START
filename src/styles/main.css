@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'upheaval_tt_brkregular';
+  src: url('../fonts/upheaval/upheavtt-webfont.woff2') format('woff2'),
+    url('../fonts/upheaval/upheavtt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'kenyan_coffeeregular';
+  src: url('../fonts/kenyan/kenyan_coffee_rg-webfont.woff2') format('woff2'),
+    url('../fonts/kenyan/kenyan_coffee_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+:root {
+  --first-color: #C70000;
+  --second-color: #92817C;
+  --third-color: #C2C2C0;
+
+  --white-color: #F3F3F3;
+  --white-color-full: #FFFFFF;
+  --white-alpha-color: rgba(255, 255, 255, 0.7);
+  --white-alpha-color-plus: rgba(255, 255, 255, 0.3);
+
+  --black-color: #252525;
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --black-alpha-color-plus: rgba(0, 0, 0, 0.7);
+
+  --font-upheav: 'upheaval_tt_brkregular';
+  --font-kenyan: 'kenyan_coffeeregular';
+  --font-calibri: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/*---------- RESET -----------*/
+
+
+::selection {
+  background: var(--first-color);
+  color: var(--white-color);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--font-alegreya);
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
+  line-height: inherit;
+  background-color: var(--black-color);
+}
+
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  font-size: 6rem;
+  font-weight: 100;
+  font-family: var(--font-upheav);
+  line-height: 1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 100;
+  font-family: var(--font-upheav);
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: var(--font-upheav);
+}
+
+h4 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: var(--font-kenyan);
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: var(--font-calibri);
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1;
+  font-family: var(--font-calibri);
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: var(--font-calibri);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: 2rem;
+  font-family: var(--font-upheav);
+}
+
+i {
+  font-size: 2rem;
+  margin: .25rem;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+li,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+
+
+/*----------- ABSOLUTES ----------*/
+
+.mr {
+  border: 5px solid red;
+}
+
+.flex {
+  display: flex;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.txtw {
+  color: var(--white-color-full);
+}
+
+.txtr {
+  color: var(--first-color);
+}
+
+.txty {
+  color: #FEC505;
+}
+
+.txtg {
+  color: #1BF818;
+}
+
+.txtbl {
+  color: #01EFFC;
+}
+
+/*----------- BREAKPOINTS ----------*/
+
+/* 
+
+iphone SE: 320px
+Android Large: 360px
+iphone 11 pro/X: 380px
+iphone 14 pro max: 430px
+
+Extra Pequeño(SM) menos de 576px
+
+Pequeño(SM) 576px - 768px
+
+Mediano(MD) 768px - 992px
+
+Grande(LG) 992 - 1200px
+
+Extra Grande(XL) mas de1200px 
+
+*/
