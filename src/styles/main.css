@@ -189,6 +189,10 @@ video {
   border: 5px solid red;
 }
 
+.disabled {
+  display: none;
+}
+
 .flex {
   display: flex;
 }

@@ -1,0 +1,52 @@
+.header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 4.5rem;
+}
+
+.navbar__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4.5rem;
+  padding: 1.5rem;
+  background-color: black;
+  border-bottom: 2px solid var(--black-color);
+}
+
+.menu__mobile {
+  z-index: -1;
+  position: absolute;
+  transform: translateY(-100%);
+  right: 0;
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem;
+  background-color: var(--first-color);
+  /* transition: all .3s ease-in-out; */
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.logo img {
+  width: 180px;
+}
+
+.navbar__desktop {
+  display: none;
+}

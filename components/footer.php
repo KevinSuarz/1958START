@@ -41,5 +41,6 @@
     </div>
     <div class="bg"></div>
   </footer>
+  <script src="src/js/navbar.js"></script>
 </body>
 </html>
