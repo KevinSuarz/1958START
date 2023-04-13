@@ -14,13 +14,13 @@
             </a>';
         }
       ?>
-      <a href="" id="burguer"><i class="fa-sharp fa-solid fa-bars txtw"></i></a>
+      <button href="" id="burguer"><i class="fa-sharp fa-solid fa-bars txtw"></i></button>
       </div>
       <nav class="menu__mobile">
-        <a href="" class = "txtw">INICIO</a>
-        <a href="" class = "txtw">CATÁLOGO</a>
-        <a href="" class = "txtw">NOSOTROS</a>
-        <a href="" class = "txtw">BLOG</a>
+        <a href="" class = "txtw menu_link">INICIO</a>
+        <a href="" class = "txtw menu_link">CATÁLOGO</a>
+        <a href="" class = "txtw menu_link">NOSOTROS</a>
+        <a href="" class = "txtw menu_link">BLOG</a>
         <div>
           <a href=""><i class="fa-sharp fa-solid fa-bag-shopping txtw"></i></a>
           <a href=""><i class="fa-solid fa-headset txtw"></i></a>
@@ -49,3 +49,4 @@
       <a href=""><i class="fa-solid fa-headset"></i></a>
     </nav>
 </header>
+

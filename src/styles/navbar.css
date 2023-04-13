@@ -36,11 +36,30 @@
   gap: .5rem;
   padding: 1rem;
   background-color: var(--first-color);
-  /* transition: all .3s ease-in-out; */
+  transition: all .2s ease-in-out;
+}
+
+.menu_link {
+  border-bottom: 3px solid var(--black-color);
+  padding: 0 2rem;
 }
 
 .showMenu {
   transform: translateY(0);
+}
+
+#burguer {
+  background-color: red;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.movete {
+  background-color: red;
+  height: 500px;
+  width: 500px;
+  transform: translateY(-1000px);
 }
 
 .logo img {
