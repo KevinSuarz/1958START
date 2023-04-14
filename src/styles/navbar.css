@@ -5,18 +5,22 @@
   height: 4.5rem;
 }
 
-.navbar__mobile {
+.navbar {
   position: fixed;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: black;
 }
 
 .nav__mobile {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  flex: 1;
   height: 4.5rem;
   padding: 1.5rem;
   background-color: black;
@@ -26,7 +30,7 @@
 .menu__mobile {
   z-index: -1;
   position: absolute;
-  transform: translateY(-100%);
+  margin-top: -100%;
   right: 0;
   width: 100%;
   max-width: 430px;
@@ -45,21 +49,20 @@
 }
 
 .showMenu {
-  transform: translateY(0);
+  margin-top: 100%;
 }
 
 #burguer {
-  background-color: red;
+  background-color: black;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.movete {
-  background-color: red;
-  height: 500px;
-  width: 500px;
-  transform: translateY(-1000px);
+.menu__mobile-icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo img {
@@ -67,5 +70,36 @@
 }
 
 .navbar__desktop {
+  color: var(--white-color);
   display: none;
+  padding: 0 3rem;
+  flex: 1;
+}
+
+
+@media (min-width: 430px) {
+  .menu__mobile {
+    margin-top: 50%;
+    transform: translateX(101%);
+  }
+
+  .showMenu {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar__desktop {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  #burguer {
+    display: none;
+  }
+
+  .menu__mobile {
+    display: none;
+  }
 }
