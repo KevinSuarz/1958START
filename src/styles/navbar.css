@@ -1,105 +1,128 @@
 .header {
-  position: relative;
   z-index: 10;
-  width: 100%;
-  height: 4.5rem;
-}
-
-.navbar {
-  position: fixed;
-  display: flex; 
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: center;
   background-color: black;
+  box-shadow: 10px 0 10px black;
 }
 
-.nav__mobile {
+.header__logo img {
+  width: 180px;
+}
+
+.burguerButton {
+  background-color: unset;
+  cursor: pointer;
+}
+
+.navbar__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--navbar-height);
+  max-width: 1440px;
+  padding: 0 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex: 1;
-  height: 4.5rem;
-  padding: 1.5rem;
+  align-items: center;
   background-color: black;
-  border-bottom: 2px solid var(--black-color);
+  box-shadow: 10px 0 10px black;
+
 }
 
 .menu__mobile {
-  z-index: -1;
-  position: absolute;
-  margin-top: -100%;
+  z-index: 9;
+  position: fixed;
+  top: var(--navbar-height);
   right: 0;
   width: 100%;
   max-width: 430px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1rem 4rem;
   background-color: var(--first-color);
+  border-radius: 0 0 10px 10px;
+  border-bottom: 5px solid white;
+  transform: translateY(-100%);
   transition: all .2s ease-in-out;
 }
 
-.menu_link {
-  border-bottom: 3px solid var(--black-color);
-  padding: 0 2rem;
+.menu__mobile--dropdown {
+  transform: translateY(0);
 }
 
-.showMenu {
-  margin-top: 100%;
-}
-
-#burguer {
-  background-color: black;
-  border: 0;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.menu__mobile-icons {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.logo img {
-  width: 180px;
+.menu__mobile-link {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid var(--white-color);
 }
 
 .navbar__desktop {
-  color: var(--white-color);
   display: none;
-  padding: 0 3rem;
-  flex: 1;
+  gap: .6rem;
+  align-items: center;
 }
 
+.menu__link {
+  border-radius: 10px;
+  padding: 0 1rem;
+  transition: all .1s ease-in;
+}
+
+.menu__link:hover {
+  background-color: var(--first-color);
+}
+
+.menu__link--active {
+  color: var(--first-color);
+  border-radius: 10px 10px 0 0; 
+  border-bottom: 2px solid var(--first-color);
+}
+
+.menu__link--active:hover {
+  background-color: white;
+}
 
 @media (min-width: 430px) {
   .menu__mobile {
-    margin-top: 50%;
-    transform: translateX(101%);
+    transform: translateX(100%);
   }
 
-  .showMenu {
+  .menu__mobile--dropdown {
     transform: translateX(0);
   }
+
+  .navbar__mobile {
+    padding: 0 3rem;
+  }
+
 }
 
 @media (min-width: 992px) {
-  .navbar__desktop {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-  }
-
-  #burguer {
+  .burguerButton {
     display: none;
   }
 
   .menu__mobile {
     display: none;
+  }
+
+  .navbar__desktop {
+    display: flex;
+  }
+
+  .header__logo img {
+    width: 230px;
   }
 }

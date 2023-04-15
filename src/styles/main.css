@@ -34,6 +34,8 @@
   --font-upheav: 'upheaval_tt_brkregular';
   --font-kenyan: 'kenyan_coffeeregular';
   --font-calibri: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  --navbar-height: 70px;
 }
 
 
@@ -130,7 +132,7 @@ p {
 a {
   color: inherit;
   text-decoration: inherit;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--font-upheav);
 }
 

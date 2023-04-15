@@ -10,10 +10,14 @@
     echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/main.css">';
     echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/navbar.css">';
     echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/footer.css">';
+    echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/productCatalogo.css">';
+    echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/catalogo.css">';
   } else {
     echo '<link rel="stylesheet" href="src/styles/main.css">';
     echo '<link rel="stylesheet" href="src/styles/navbar.css">';
     echo '<link rel="stylesheet" href="src/styles/footer.css">';
+    echo '<link rel="stylesheet" href="src/styles/productCatalogo.css">';
+    echo '<link rel="stylesheet" href="src/styles/catalogo.css">';
   }
   ?>
   <script src="https://kit.fontawesome.com/ee9a0937c2.js" crossorigin="anonymous"></script>

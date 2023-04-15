@@ -1,8 +1,11 @@
-<?php include("components/head.php");?>
-<?php include("components/navbar.php");?>
+<?php
+  $current_page = 'inicio';
+  include("components/head.php");
+  include("components/navbar.php");
+?>
 
 
-<h1>prueba de la pagina y la fuente</h1>
+<h1>inicio</h1>
 
 
 <?php include("components/footer.php");?>
