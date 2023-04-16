@@ -211,6 +211,10 @@ video {
   color: var(--first-color);
 }
 
+.txtgray {
+  color: var(--second-color);
+}
+
 .txty {
   color: #FEC505;
 }

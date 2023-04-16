@@ -41,6 +41,6 @@
     </div>
     <div class="bg"></div>
   </footer>
-  <script src="src/js/navbar.js"></script>
+  <script src="<?php echo isset($ruta_base) ? $ruta_base : '' ?>src/js/navbar.js"></script>
 </body>
 </html>
