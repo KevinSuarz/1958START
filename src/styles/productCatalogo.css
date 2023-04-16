@@ -25,13 +25,13 @@
 }
 
 .catalogo__producto:hover .producto__imagen {
-  width: 120%;
+  transform: scale(1.2);
 }
 
 .producto__marco {
   width: 90%;
   flex: 1;
-  height: 310px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,18 +43,28 @@
 }
 
 .producto__anio {
+  flex: 0;
   font-size: 1.5rem;
   font-weight: 100;
 }
 
-.producto__imagen {
+.product__imag {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  height: 0;
+  max-height: 100%;
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+.producto__imagen {
+  max-height: 100%;
   transition: all .1s ease-in;
 }
 
 .car__add {
+  flex: 0;
   font-size: 1.8rem;
   font-weight: 100;
 }

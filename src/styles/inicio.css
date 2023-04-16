@@ -1,0 +1,9 @@
+.votos {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap-reverse;
+  margin: 0 auto;
+  padding: 2rem;
+}
