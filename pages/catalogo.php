@@ -8,13 +8,10 @@
 <div class="catalogo__galeria">
   <?php 
     include("../components/productPrice.php");
-    include("../components/productPrice.php");
-    include("../components/productPrice.php");
-    include("../components/productPrice.php");
-    include("../components/productPrice.php");
-    include("../components/productPrice.php");
-    include("../components/productPrice.php");
-    include("../components/productPrice.php");
+    echo catalogo__card("1990","Super Nintendo","super-nintendo.png","85,00", $ruta_base);
+    echo catalogo__card("1998","GameBoy Pocket","gameboy.png","68,00", $ruta_base);
+    echo catalogo__card("1990","Super Nintendo","super-nintendo.png","85,00", $ruta_base);
+    echo catalogo__card("1990","Super Nintendo","super-nintendo.png","85,00", $ruta_base);
   ?>
 </div>
 
