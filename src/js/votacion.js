@@ -1,13 +1,11 @@
 
-
-
-function seleccionado (selected){
-  let seleccion = document.querySelector(`#${selected}`);
-  let check = document.querySelector(`.${selected}`);
-  console.log(selected);
-  if(check.checked){
-    seleccion.classList.add('votado');
-  }else {
-    seleccion.classList.remove('votado');
-  };
+function seleccionado(selected) {
+  let divs = document.querySelectorAll(".votos__container-img");
+  for (let i = 0; i < divs.length; i++) {
+    if (divs[i].getAttribute("data-voto") === selected) {
+      divs[i].classList.add("votado");
+    } else {
+      divs[i].classList.remove("votado");
+    }
+  }
 }
