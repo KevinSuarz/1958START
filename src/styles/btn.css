@@ -1,0 +1,7 @@
+.btn-container {
+  clip-path: polygon(0% 24%, 4% 23%, 3% 9%, 8% 9%, 9% 0%, 93% 0%, 93% 11%, 100% 11%, 99% 25%, 100% 27%, 100% 79%, 95% 77%, 96% 90%, 90% 88%, 90% 100%, 10% 100%, 9% 87%, 5% 82%, 5% 72%, 0% 71%);
+  background-color: aqua;
+  max-height: 50px;
+  width: 200px;
+  text-align: center;
+}
