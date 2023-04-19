@@ -1,9 +1,21 @@
 .votos {
   max-width: 1440px;
+  margin: 2rem auto;
+
+}
+
+.votos__votacion {
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap-reverse;
   margin: 0 auto;
   padding: 2rem;
+}
+
+.votos__submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
