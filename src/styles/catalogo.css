@@ -2,8 +2,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: .5rem;
   max-width: 1440px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.catalogo__reco {
+  width: 100%;
+  max-width: 1440px;
+  margin: 2rem auto;
+
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 430px) {
+  .catalogo__reco {
+    padding: 0 2rem;
+    gap: 1rem;
+  }
 }

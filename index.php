@@ -15,7 +15,7 @@
     </div>
     <?php
       include("components/button.php");
-          echo btn("votos__submit", "ENVIAR", "abrirform", "btn__red", $ruta_base);
+          echo btn("votos__submit", "ENVIAR", "abrirform", "btn__red", $ruta_base, "txtb");
     ?>
   </div>
   

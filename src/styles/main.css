@@ -33,7 +33,7 @@
 
   --font-upheav: 'upheaval_tt_brkregular';
   --font-kenyan: 'kenyan_coffeeregular';
-  --font-calibri: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --font-calibri: Calibri, 'Trebuchet MS', sans-serif;
 
   --navbar-height: 70px;
 }

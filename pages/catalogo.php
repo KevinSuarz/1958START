@@ -4,6 +4,15 @@
   include("../components/head.php");
   include("../components/navbar.php");
 ?>
+<div class="catalogo__reco">
+  <?php 
+    include("../components/recoCard.php");
+    echo recoCard($ruta_base);
+    echo recoCard($ruta_base);
+    echo recoCard($ruta_base);
+  ?>
+</div>
+
 
 <div class="catalogo__galeria">
   <?php 
