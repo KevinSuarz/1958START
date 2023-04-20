@@ -6,5 +6,16 @@
 ?>
 
 <h1>nosotros</h1>
+  
+<div class="nosotros__blog">
+  <?php 
+    include("../components/cartablog.php");
+    echo cartaBlog("cartaBlog1.jpeg","solo con","xbox");
+    echo cartaBlog("cartaBlog2.jpg","esta bien","xbox");
+    echo cartaBlog("si","solo con","xbox");
+    echo cartaBlog("si","solo con","xbox");
+  ?>
+</div>
+
 
 <?php include("../components/footer.php");?>

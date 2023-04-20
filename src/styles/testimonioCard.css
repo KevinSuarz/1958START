@@ -1,0 +1,76 @@
+.testimonio__card {
+  width: 25vw;
+  min-width: 300px;
+  max-width: 420px;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  background-color: #FFF;
+  box-shadow: 8px 8px 0 black;
+}
+
+.testimonio__header {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding: .2rem 1rem;
+  gap: 10px;
+  margin-bottom: .5rem;
+}
+
+.testimonio__photo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonio__datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.testimonio__persona {
+  font-size: 1.5rem;
+}
+.testimonio__fecha {
+  font-size: .9rem;
+}
+
+.testimonio__body {
+  padding: .4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.testimonio__points {
+  display: flex;
+  justify-content: space-between;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.testimonio__stars {
+  display: flex;
+  flex: 1;
+}
+
+.testimonio__stars i {
+  font-size: 1rem;
+  color: rgb(255, 191, 15);
+}
+
+.testimonio__google {
+  font-size: 1rem;
+  color: rgb(0, 106, 255);
+}
+
+.testimonio__declaracion {
+  margin-top: .3rem;
+}

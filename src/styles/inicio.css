@@ -19,3 +19,18 @@
   display: flex;
   justify-content: center;
 }
+
+.testimonios {
+  max-width: 1440px;
+  padding: 2rem;
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonios__container {
+  width: 200%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}

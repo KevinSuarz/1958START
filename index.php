@@ -18,6 +18,18 @@
           echo btn("votos__submit", "ENVIAR", "abrirform", "btn__red", $ruta_base, "txtb");
     ?>
   </div>
+
+  <div class="testimonios">
+    <div class="testimonios__container">
+      <?php
+        include("components/testimonioCard.php");
+        include("components/testimonioCard.php");
+        include("components/testimonioCard.php");
+        include("components/testimonioCard.php");
+        include("components/testimonioCard.php");
+      ?>
+    </div>
+  </div>
   
 <?php
   include("components/footer.php");
