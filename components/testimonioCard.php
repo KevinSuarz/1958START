@@ -2,8 +2,8 @@
   <div class="testimonio__card">
     <div class="testimonio__header">
       <img
-        src="../src/img/cartaBlog1.jpeg"
-        alt="foto-perfil"
+        src="src/img/cartaBlog1.jpeg"
+        alt=""
         class="testimonio__photo"
       />
       <div class="testimonio__datos">

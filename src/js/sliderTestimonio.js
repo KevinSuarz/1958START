@@ -1,4 +1,3 @@
-/*SLIDER TESTIMONIO*/
 
 let slider = document.querySelector(".testimonio__container");
 let sliderIndividual = document.querySelectorAll(".testimonio__card");
