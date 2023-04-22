@@ -43,5 +43,6 @@
   </footer>
   <script src="<?php echo isset($ruta_base) ? $ruta_base : '' ?>src/js/navbar.js"></script>
   <script src="<?php echo isset($ruta_base) ? $ruta_base : '' ?>src/js/votacion.js"></script>
+  <script src="<?php echo isset($ruta_base) ? $ruta_base : '' ?>src/js/sliderTestimonio.js"></script>
 </body>
 </html>

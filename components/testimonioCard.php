@@ -1,4 +1,5 @@
 
+<div class="tarjeta__cover">
   <div class="testimonio__card">
     <div class="testimonio__header">
       <img
@@ -27,3 +28,4 @@
       </p>
     </div>
   </div>
+</div>

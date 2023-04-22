@@ -27,6 +27,8 @@
         include("components/testimonioCard.php");
         include("components/testimonioCard.php");
         include("components/testimonioCard.php");
+        include("components/testimonioCard.php");
+        include("components/testimonioCard.php");
       ?>
     </div>
   </div>

@@ -1,28 +1,32 @@
+const slider = document.querySelector('.testimonios__container');
+slider.style.transition = "all 1s ease-in-out";
 
-let slider = document.querySelector(".testimonio__container");
-let sliderIndividual = document.querySelectorAll(".testimonio__card");
-let contador = 1;
-let width = sliderIndividual[0].clientWidth;
-let intervalo = 3000;
+function slides(){
+  let contador = 0;
 
-window.addEventListener("resize", function () {
-  let width = sliderIndividual[0].clientWidth;
-});
+  let testimonioCards = document.querySelectorAll(".tarjeta__cover");
+  let width = testimonioCards[0].clientWidth;
+  let ancho = width;
 
-setInterval(function () {
-  slides();
-}, intervalo);
+  window.addEventListener("resize", function () {
+    let width = testimonioCards[0].clientWidth;
+  });
 
-function slides() {
-  slider.style.transform = "translate(" + -(width + 50) * contador + "px)";
-  slider.style.transition = "transform 1s";
-  contador++;
+  setInterval(() => {
+    slider.style.transform = `translateX(-${width}px)`;
+    width+= ancho;
+    contador++;
 
-  if (contador == sliderIndividual.length - 2) {
-    setTimeout(function () {
-      slider.style.transform = "translate(0px)";
-      slider.style.transition = "transform .8s";
-      contador = 1;
-    }, 1500);
-  }
-}
+    if (contador === testimonioCards.length) {
+      slider.style.transition = "all 0";
+      setTimeout(function () {
+        slider.style.transform = "translateX(0)";
+        contador = 0;
+        width = testimonioCards[0].clientWidth;
+      }, 0);
+    }
+  }, 2000);
+
+};
+
+slides();

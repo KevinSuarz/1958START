@@ -1,7 +1,7 @@
 .votos {
   max-width: 1440px;
+  width: 100%;
   margin: 2rem auto;
-
 }
 
 .votos__votacion {
@@ -21,16 +21,15 @@
 }
 
 .testimonios {
+  position: relative;
   max-width: 1440px;
-  padding: 2rem;
-  display: flex;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .testimonios__container {
-  width: 200%;
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
-  gap: 1.5rem;
 }
