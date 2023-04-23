@@ -4,9 +4,11 @@
   include("../components/head.php");
   include("../components/navbar.php");
 ?>
-
-<h1>nosotros</h1>
+  <?php
+    include("../components/somosCard.php");
+  ?>
   
+
 <div class="nosotros__blog">
   <?php 
     include("../components/cartablog.php");

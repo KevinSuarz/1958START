@@ -5,6 +5,13 @@
   include("../components/navbar.php");
 ?>
 
-<h1>blog</h1>
+<div class="blog">
+  <?php 
+    include("../components/blogCard.php");
+    include("../components/blogCard.php");
+    include("../components/blogCard.php");
+    include("../components/blogCard.php");
+  ?>
+</div>
 
 <?php include("../components/footer.php");?>

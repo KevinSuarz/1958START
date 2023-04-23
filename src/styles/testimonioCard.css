@@ -3,10 +3,6 @@
   padding: 0 8px 8px 0;
 }
 
-.tarjeta__cover:nth-child(7) {
-  background-color: red;
-}
-
 @media (max-width: 992px) {
   .tarjeta__cover {
     min-width: 50%;

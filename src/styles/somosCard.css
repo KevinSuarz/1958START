@@ -1,0 +1,76 @@
+.somosCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  border: 4px solid black;
+  height: fit-content;
+}
+
+.somosCard__foto {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.somosCard__foto img {
+  width: 100%;
+  max-height: unset;
+  object-fit: contain;
+}
+
+.somosCard__info {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.somosCard__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.somosCard__nombre {
+  border: 4px solid black;
+  width: fit-content;
+  padding: 0 .7rem;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+.somosCard__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.somosCard__autores {
+  font-size: 1.2rem;
+  font-weight: 100;
+  border-bottom: 4px solid black;
+}
+
+.somosCard__anio {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+@media (min-width: 992px) {
+  .somosCard {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 1rem auto;
+  }
+
+  .somosCard__foto {
+    height: 100%;
+  }
+  .somosCard__foto img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -19,6 +19,8 @@
     echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/cartaBlog.css">';
     echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/nosotros.css">';
     echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/testimonioCard.css">';
+    echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/somosCard.css">';
+    echo '<link rel="stylesheet" href="'. $ruta_base . 'src/styles/blogCard.css">';
   } else {
     echo '<link rel="stylesheet" href="src/styles/main.css">';
     echo '<link rel="stylesheet" href="src/styles/navbar.css">';
@@ -32,6 +34,8 @@
     echo '<link rel="stylesheet" href="src/styles/cartaBlog.css">';
     echo '<link rel="stylesheet" href="src/styles/nosotros.css">';
     echo '<link rel="stylesheet" href="src/styles/testimonioCard.css">';
+    echo '<link rel="stylesheet" href="src/styles/somosCard.css">';
+    echo '<link rel="stylesheet" href="src/styles/blogCard.css">';
   }
   ?>
   <script src="https://kit.fontawesome.com/ee9a0937c2.js" crossorigin="anonymous"></script>
