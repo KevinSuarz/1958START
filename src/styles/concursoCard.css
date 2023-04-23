@@ -49,8 +49,24 @@
   border: 20px solid var(--white-color);
 }
 
+.votado2::before {
+  z-index: 2;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  transform: rotateZ(-2deg);
+  background-color: var(--first-color);
+  box-shadow: 0 0 12px var(--first-color);
+  border: 20px solid var(--white-color);
+}
 
 .votos__img {
+  z-index: 4;
   max-height: 80%;
 }
 
