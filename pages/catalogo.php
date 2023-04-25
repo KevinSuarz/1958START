@@ -28,6 +28,4 @@
   ?>
 </div>
 
-<h1>catalogo</h1>
-
 <?php include("../components/footer.php");?>

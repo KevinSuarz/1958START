@@ -8,8 +8,6 @@
   height: var(--navbar-height);
   display: flex;
   justify-content: center;
-  background-color: black;
-  box-shadow: 10px 0 10px black;
 }
 
 .header__logo img {
@@ -26,17 +24,18 @@
   top: 0;
   left: 0;
   right: 0;
-  margin: 0 auto;
   width: 100%;
   height: var(--navbar-height);
+  background-color: black;
+  box-shadow: 10px 0 10px black;
+}
+.layout {
   max-width: 1440px;
-  padding: 0 1rem;
+  height: 100%;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  box-shadow: 10px 0 10px black;
-
 }
 
 .menu__mobile {

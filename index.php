@@ -20,7 +20,7 @@
     <div class="hero__producto">
       <?php 
         echo votos__card("hero__gameboy.png","nes", $ruta_base, "votado2","disabled"); 
-        echo btn("votos__submit desktop", "COMPRA YA!!", "abrirform", "btn__red", $ruta_base, "txtb");
+        echo btn("votos__submit desktop", "COMPRA YA!!", "pages/carrito.php", "btn__red", $ruta_base, "txtb");
       ?>
     </div>
     <div class="hero__botones">
@@ -29,7 +29,7 @@
         <h1 class="hero__title-desktop txtw">VIDEOJUEGOS</h1>
       </div>
       <?php 
-        echo btn("votos__submit", "CATÁLOGO", "abrirform", "btn__red", $ruta_base, "txtb hero__btn");
+        echo btn("votos__submit", "CATÁLOGO", "pages/catalogo.php", "btn__red", $ruta_base, "txtb hero__btn");
       ?>
     </div>
     <div class="hero__redes">
@@ -47,7 +47,7 @@
         <h2 class="dia__title">MÁS VENDIDAD HOY</h2>
         <?php 
         echo catalogo__card("1990","Super Nintendo","super-nintendo.png","85,00", $ruta_base);
-        echo btn("votos__submit desktop", "COMPRA YA!!", "abrirform", "btn__red", $ruta_base, "txtb");
+        echo btn("votos__submit desktop", "COMPRA YA!!", "pages/carrito.php", "btn__red", $ruta_base, "txtb");
         ?>
       </div>
       <div class="dia__blog">
@@ -55,12 +55,12 @@
         <P class="txtw">¿Eres todo un gamer? En nuestro blog encontrarás Promociones, curiosidades, datos importantes, estadisticas y todo contenido del mundo gaming</P>
         <div class="dia__blog-card">
           <?php 
-          echo cartaBlog("cartaBlog1.jpeg","solo con","xbox");
-          echo cartaBlog("cartaBlog2.jpg","esta bien","xbox");
+          echo cartaBlog("cartaBlog1.jpeg","solo con","xbox",$ruta_base);
+          echo cartaBlog("cartaBlog2.jpg","esta bien","xbox",$ruta_base);
         ?>
         </div>
         <?php 
-          echo btn("votos__submit desktop", "COMPRA YA!!", "abrirform", "btn__black", $ruta_base, "txtb");
+          echo btn("votos__submit desktop", "BLOG", "pages/blog.php", "btn__black", $ruta_base, "txtb");
         ?>
       </div>
     </div>
